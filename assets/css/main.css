@@ -1883,8 +1883,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 2px #2ee4bb;
-			color: #2ee4bb !important;
+			box-shadow: inset 0 0 0 2px #f64843;
+			color: #f64843 !important;
 		}
 
 		input[type="submit"]:active,
@@ -1893,8 +1893,8 @@ input, select, textarea {
 		button:active,
 		.button:active {
 			background-color: rgba(73, 252, 212, 0.25);
-			box-shadow: inset 0 0 0 2px #2ee4bb;
-			color: #2ee4bb !important;
+			box-shadow: inset 0 0 0 2px #f64843;
+			color: #f64843 !important;
 		}
 
 		input[type="submit"].small,
@@ -1971,7 +1971,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #93ffe7;
+				background-color: #f64843;
 			}
 
 			input[type="submit"].primary:active,
@@ -1979,7 +1979,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #44f2cb;
+				background-color: #f64843;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -3144,7 +3144,7 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		list-style: none;
-		margin: 3rem 0;
+		margin: 0 0 3rem 0;
 		padding-left: 0;
 	}
 
@@ -3156,7 +3156,7 @@ input, select, textarea {
 			margin: 2.5rem 0 0 0;
 			padding: 0.5rem 0 0 4.5rem;
 			position: relative;
-			width: 50%;
+			width: 100%;
 		}
 
 			ul.feature-icons li:before {
@@ -3176,8 +3176,12 @@ input, select, textarea {
 				width: 3.25rem;
 			}
 
-			ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
+			ul.feature-icons li:nth-child(1) {
 				margin-top: 0;
+			}
+
+			ul.feature-icons li:nth-child(2) {
+				margin-top: 2rem;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -3302,7 +3306,7 @@ input, select, textarea {
 					display: block;
 					height: 0.5rem;
 					position: absolute;
-					top: 0.75rem;
+					top: 0.80rem;
 					width: 0.5rem;
 				}
 
@@ -3315,7 +3319,7 @@ input, select, textarea {
 				}
 
 				#wrapper > section > header h1:after {
-					top: 2.75rem;
+					top: 2.80rem;
 				}
 
 			#wrapper > section > .content > section {
@@ -3702,6 +3706,7 @@ input, select, textarea {
 
 				#wrapper > section > header {
 					padding: 3rem 2rem;
+					margin-bottom: 0;
 				}
 
 				#wrapper > section > .content {
@@ -3714,6 +3719,7 @@ input, select, textarea {
 
 				#wrapper > section > footer {
 					padding: 0 2rem 3rem 2rem;
+					text-align: center;
 				}
 
 				#wrapper > section.intro > header {
